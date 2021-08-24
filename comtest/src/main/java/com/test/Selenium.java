@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Selenium {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","D:\\tools\\chromedriver_win32\\chromedriver.exe"); // <-- Change this path
+        System.setProperty("webdriver.chrome.driver","comtest/lib/chromedriver.exe"); // <-- Change this path
         WebDriver driver = new ChromeDriver();
         String baseUrl = "https://google.com";
         String expectedTitle = "Google";
