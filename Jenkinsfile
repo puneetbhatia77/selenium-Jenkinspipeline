@@ -6,8 +6,8 @@ node {
     	dir("comtest") {
 	   sh "mvn clean install"
        }
-       	dir("comtest/target") {
-	   sh "java -jar com.test-1.0-SNAPSHOT.jar"
-       }
-		}
+	}
+    stage ('test') {
+    	sh "java -jar comtest/target/com.test-1.0-SNAPSHOT.jar"
+    }
 }
