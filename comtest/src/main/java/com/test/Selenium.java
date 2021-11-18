@@ -24,6 +24,7 @@ public class Selenium {
             System.out.println("TEST PASSED!");
         } else {
             System.out.println("TEST FAILED");
+	     exit(1);
         }
         driver.close();
     }
