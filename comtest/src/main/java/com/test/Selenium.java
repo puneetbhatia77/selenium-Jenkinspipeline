@@ -15,7 +15,7 @@ public class Selenium {
 		
 	//WebDriver driver = new ChromeDriver();
         String baseUrl = "https://google.com";
-        String expectedTitle = "google";
+        String expectedTitle = "Google";
         String actualTitle = "";
         driver.get(baseUrl);
         actualTitle = driver.getTitle();
